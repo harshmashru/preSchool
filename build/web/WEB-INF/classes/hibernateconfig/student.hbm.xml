@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="pojo.student" table="student">
+      <id name="SID" type="java.lang.Integer">
+          <column name="SID"/>
+      </id>
+      <property name="AID" type="java.lang.Integer">
+          <column name="AID"/>
+      </property>
+      <property name="SNAME" type="string">
+          <column name="SNAME"/>
+      </property>
+      <property name="P_EmailAdd" type="string">
+          <column name="P_EmailAdd"/>
+      </property>
+      <property name="P_Mobileno" type="string">
+          <column name="P_Mobileno"/>
+      </property>
+      <property name="Password" type="string">
+          <column name="Password"/>
+      </property>
+      <property name="Fees" type="java.lang.Float">
+          <column name="Fees"/>
+      </property>
+      <property name="Status" type="string">
+          <column name="Status"/>
+      </property>
+  </class>
+</hibernate-mapping>
